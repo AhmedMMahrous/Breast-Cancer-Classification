@@ -2,7 +2,7 @@
  This application helps you diagnose breast cancer by entering some medical tests.
  
    
-| About this project |
+|**About this project** |                                                     
 | ------------------------------------------------- |                                 
 | Details about the dataset |
 | Importing libraries |
@@ -21,4 +21,3 @@
 | make a website using HTML &  CSS |
 | Use Flask for making API |
 
- [![1.png](https://i.postimg.cc/ryRgnB8Y/1.png)](https://postimg.cc/9zVGzNwG)
