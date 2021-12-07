@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Breast Cancer Prediction</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- MATERIAL DESIGN ICONIC FONT -->
+		<link rel="stylesheet" href="/static/fonts/material-design-iconic-font/css/material-design-iconic-font.min.css">
+		
+		<!-- STYLE CSS -->
+		<link rel="stylesheet" href="/static/css/style.css">
+	</head>
+
+	<body>
+
+		<div class="wrapper">
+			<div class="inner">
+
+		
+
+				<form action="/predict" method="GET">
+					<h3>Breast Cancer Prediction</h3>
+					<p>This application helps you diagnose breast cancer by entering some medical tests.</p>
+					<label class="form-group">
+						<input type="number" class="form-control" name ='radius_mean' required>
+						<span>Radius Mean</span>
+						<span class="border"></span>
+					</label>
+					<label class="form-group">
+						<input type="number" class="form-control" name ='texture_mean'  required>
+						<span for="">Texture Mean</span>
+						<span class="border"></span>
+					</label>
+					<label class="form-group">
+						<input type="number" class="form-control" name ='perimeter_mean' required>
+						<span for="">Perimeter Mean</span>
+						<span class="border"></span>
+					</label>
+					<label class="form-group">
+						<input type="number" class="form-control" name = 'area_mean' required>
+						<span for="">Area Mean</span>
+						<span class="border"></span>
+					</label>
+					<label class="form-group">
+						<input type="number" class="form-control" name = 'perimeter_se'  required>
+						<span for="">Perimeter Se</span>
+						<span class="border"></span>
+					</label>
+					<label class="form-group">
+						<input type="number" class="form-control" name = 'area_se' required>
+						<span for="">Area Se</span>
+						<span class="border"></span>
+					</label>
+					<label class="form-group">
+						<input type="number" class="form-control" name = 'radius_worst'  required>
+						<span for="">Radius Worst</span>
+						<span class="border"></span>
+					</label>
+					<label class="form-group">
+						<input type="number" class="form-control" name = 'texture_worst' required>
+						<span for="">Texture Worst</span>
+						<span class="border"></span>
+					</label>
+					<label class="form-group">
+						<input type="number" class="form-control" name = 'perimeter_worst' required>
+						<span for="">Perimeter Worst</span>
+						<span class="border"></span>
+					</label>
+					<label class="form-group">
+						<input type="number" class="form-control" name = 'area_worst' required>
+						<span for="">Area Worst</span>
+						<span class="border"></span>
+					</label>
+
+					<button>Predict 
+						<i class="zmdi zmdi-arrow-right"></i>
+					</button>
+				</form>
+				{{ prediction }}
+			</div>
+		</div>
+		
+	</body>
+</html>
